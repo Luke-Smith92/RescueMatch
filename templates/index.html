@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RescueMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>🐾 RescueMatch</h1>
+    <p>Find your perfect rescue companion.</p>
+
+    <h2>Available Pets</h2>
+
+    {% for pet in pets %}
+        <div>
+            <h3>{{ pet.name }}</h3>
+            <p>Type: {{ pet.type }}</p>
+            <p>Age: {{ pet.age }}</p>
+        </div>
+    {% endfor %}
+
+</body>
+</html>
