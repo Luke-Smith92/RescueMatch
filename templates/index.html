@@ -2,23 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RescueMatch</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <header class="navbar">
+        <div class="logo">RescueMatch</div>
 
-    <h1>🐾 RescueMatch</h1>
-    <p>Find your perfect rescue companion.</p>
+        <nav class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Browse Animals</a>
+            <a href="#">Login</a>
+            <a href="#">My Profile</a>
+        </nav>
+    </header>
 
-    <h2>Available Pets</h2>
+    <main class="hero-section">
+        <div class="overlay"></div>
 
-    {% for pet in pets %}
-        <div>
-            <h3>{{ pet.name }}</h3>
-            <p>Type: {{ pet.type }}</p>
-            <p>Age: {{ pet.age }}</p>
-        </div>
-    {% endfor %}
+        <section class="hero-card">
+            <h1>Welcome to <span>RescueMatch</span></h1>
 
+            <p>
+                RescueMatch connects people with rescued animals from approved centres
+                across Britain. Browse pets looking for a new home, discover your
+                perfect match, and give an animal a forever home!
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#" class="btn primary-btn">Find Your Match</a>
+                <a href="#" class="btn secondary-btn">Login</a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
