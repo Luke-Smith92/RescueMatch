@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Animals - RescueMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">RescueMatch</div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/browse">Browse Animals</a>
+            <a href="#">Login</a>
+            <a href="#">My Profile</a>
+        </nav>
+    </header>
+
+    <main class="browse-page">
+        <section class="browse-header">
+            <h1>Find Your New Best Friend</h1>
+            <p>Browse rescue animals currently looking for a loving home.</p>
+        </section>
+
+        <section class="pet-grid">
+            {% for pet in pets %}
+                <div class="pet-card">
+                    <div class="pet-image-placeholder"></div>
+                    <h3>{{ pet.name }}</h3>
+                    <p>{{ pet.type }}, {{ pet.age }} years old</p>
+                    <a href="#" class="btn primary-btn">View Details</a>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>
