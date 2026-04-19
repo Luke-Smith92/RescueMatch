@@ -1,5 +1,34 @@
 [
-  {"name": "Buddy", "type": "Dog", "age": 3},
-  {"name": "Mittens", "type": "Cat", "age": 2},
-  {"name": "Charlie", "type": "Dog", "age": 5}
-]
+    {
+    "id": 1,
+    "name": "Buddy",
+    "type": "Dog",
+    "age": 3,
+    "description": "Buddy is a friendly and energetic dog who loves walks and attention.",
+    "rescue_name": "Happy Tails Rescue",
+    "location": "Manchester",
+    "email": "contact@happytails.org",
+    "phone": "01234 567890"
+  },
+  {
+    "id": 2,
+    "name": "Mittens",
+    "type": "Cat",
+    "age": 2,
+    "description": "Mittens is a calm indoor cat who enjoys quiet spaces and cosy naps.",
+    "rescue_name": "Paws Haven",
+    "location": "Leeds",
+    "email": "info@pawshaven.org",
+    "phone": "01132 456789"
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "type": "Dog",
+    "age": 5,
+    "description": "Charlie is a loyal older dog looking for a loving forever home.",
+    "rescue_name": "Second Chance Rescue",
+    "location": "Liverpool",
+    "email": "hello@secondchance.org",
+    "phone": "01514 123456"
+  }]

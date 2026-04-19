@@ -25,15 +25,21 @@
         </section>
 
         <section class="pet-grid">
-            {% for pet in pets %}
-                <div class="pet-card">
-                    <div class="pet-image-placeholder"></div>
-                    <h3>{{ pet.name }}</h3>
-                    <p>{{ pet.type }}, {{ pet.age }} years old</p>
-                    <a href="#" class="btn primary-btn">View Details</a>
-                </div>
-            {% endfor %}
-        </section>
+            
+    {% for pet in pets %}
+        <div class="pet-card">
+            <div class="pet-image-placeholder"></div>
+
+            <h3>{{ pet.name }}</h3>
+            <p>{{ pet.type }}, {{ pet.age }} years old</p>
+
+            <a href="/animal/{{ pet.id }}" class="btn primary-btn">
+                View Details
+            </a>
+        </div>
+    {% endfor %}
+</section>
+            
     </main>
 </body>
 </html>

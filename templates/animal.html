@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ pet.name }} - RescueMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">RescueMatch</div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/browse">Browse Animals</a>
+        </nav>
+    </header>
+
+    <main class="details-page">
+        <div class="details-card">
+            <div class="details-image-placeholder"></div>
+
+            <div class="details-content">
+                <h1>{{ pet.name }}</h1>
+                <p>{{ pet.type }} - {{ pet.age }} years old</p>
+
+                <p>{{ pet.description }}</p>
+
+                <a href="#" class="btn primary-btn">
+                    Match with {{ pet.name }}
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
