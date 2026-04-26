@@ -118,10 +118,22 @@ body {
 
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+@media (max-width: 900px) {
+    .pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (max-width: 500px) {
+    .pet-grid {
+        grid-template-columns: 1fr;
+    }
+}
 .pet-card {
     background: rgba(255, 255, 255, 0.96);
     border-radius: 16px;
