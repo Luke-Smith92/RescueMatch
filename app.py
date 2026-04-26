@@ -26,5 +26,15 @@ def animal_detail(pet_id):
 
     return "Pet not found"
 
+@app.route("/match/<int:pet_id>")
+def match_pet(pet_id):
+    pets = load_pets()
+
+    for pet in pets:
+        if pet["id"] == pet_id:
+            return render_template("match.html", pet=pet)
+
+    return "Pet not found"
+
 if __name__ == "__main__":
     app.run(debug=True)

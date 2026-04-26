@@ -229,3 +229,61 @@ body {
         height: 250px;
     }
 }
+.match-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.match-card {
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 18px;
+    padding: 45px 35px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.match-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.match-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.match-message {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+.unlocked-details {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    text-align: left;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+}
+
+.unlocked-details h2 {
+    margin-bottom: 15px;
+    color: #1f2937;
+}
+
+.unlocked-details p {
+    margin-bottom: 10px;
+    color: #374151;
+}
+
+.match-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}

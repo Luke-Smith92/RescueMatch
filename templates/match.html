@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matched with {{ pet.name }} - RescueMatch</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">RescueMatch</div>
+
+        <nav class="nav-links">
+            <a href="/">Home</a>
+            <a href="/browse">Browse Animals</a>
+            <a href="#">Login</a>
+            <a href="#">My Profile</a>
+        </nav>
+    </header>
+
+    <main class="match-page">
+        <section class="match-card">
+            <div class="match-icon">🐾</div>
+
+            <h1>You matched with {{ pet.name }}!</h1>
+
+            <p class="match-message">
+                Great news! You have unlocked the rescue centre details for this animal.
+                You can now contact the rescue directly to ask about adoption.
+            </p>
+
+            <div class="unlocked-details">
+                <h2>Unlocked Rescue Details</h2>
+
+                <p><strong>Animal:</strong> {{ pet.name }}</p>
+                <p><strong>Type:</strong> {{ pet.type }}</p>
+                <p><strong>Age:</strong> {{ pet.age }} years old</p>
+                <p><strong>Rescue Centre:</strong> {{ pet.rescue_name }}</p>
+                <p><strong>Location:</strong> {{ pet.location }}</p>
+                <p><strong>Email:</strong> {{ pet.email }}</p>
+                <p><strong>Phone:</strong> {{ pet.phone }}</p>
+            </div>
+
+            <div class="match-actions">
+                <a href="/browse" class="btn secondary-btn">Browse More Animals</a>
+                <a href="/animal/{{ pet.id }}" class="btn primary-btn">Back to {{ pet.name }}</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
