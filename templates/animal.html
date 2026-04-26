@@ -17,6 +17,17 @@
     </header>
 
     <main class="details-page">
+        <div class="details-navigation">
+    {% if previous_pet %}
+        <a href="/animal/{{ previous_pet.id }}" class="arrow-link">← Previous</a>
+    {% else %}
+        <span></span>
+    {% endif %}
+
+    {% if next_pet %}
+        <a href="/animal/{{ next_pet.id }}" class="arrow-link">Next →</a>
+    {% endif %}
+    </div>
         <div class="details-card">
             <div class="details-image-placeholder"></div>
 

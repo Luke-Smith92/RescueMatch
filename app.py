@@ -26,11 +26,18 @@ def browse():
 @app.route("/animal/<int:pet_id>")
 def animal_detail(pet_id):
     pets = load_pets()
-    matches_left = get_matches_left()
 
-    for pet in pets:
+    for index, pet in enumerate(pets):
         if pet["id"] == pet_id:
-            return render_template("animal.html", pet=pet, matches_left=matches_left)
+            previous_pet = pets[index - 1] if index > 0 else None
+            next_pet = pets[index + 1] if index < len(pets) - 1 else None
+
+            return render_template(
+                "animal.html",
+                pet=pet,
+                previous_pet=previous_pet,
+                next_pet=next_pet
+            )
 
     return "Pet not found"
 

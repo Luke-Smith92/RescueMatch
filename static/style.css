@@ -310,3 +310,19 @@ body {
 .back-link:hover {
     text-decoration: underline;
 }
+.details-navigation {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-link {
+    color: #f26b6b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.arrow-link:hover {
+    text-decoration: underline;
+}
