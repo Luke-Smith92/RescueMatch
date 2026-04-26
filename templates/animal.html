@@ -22,8 +22,11 @@
 
             <div class="details-content">
                 <h1>{{ pet.name }}</h1>
-                <p>{{ pet.type }} - {{ pet.age }} years old</p>
+                <p><strong>Type:</strong> {{ pet.type }}</p>
+                <p><strong>Breed:</strong> {{ pet.breed }}</p>
+                <p><strong>Age:</strong> {{ pet.age }} years old</p>
 
+                <h2>About {{ pet.name }}</h2>
                 <p>{{ pet.description }}</p>
 
                 <a href="/match/{{ pet.id }}" class="btn primary-btn">
