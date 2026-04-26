@@ -1,34 +1,110 @@
 [
-    {
+  {
     "id": 1,
     "name": "Buddy",
     "type": "Dog",
+    "breed": "Chihuahua",
     "age": 3,
-    "description": "Buddy is a friendly and energetic dog who loves walks and attention.",
-    "rescue_name": "Happy Tails Rescue",
+    "description": "Buddy is a friendly and energetic dog who loves walks and attention. Inspired by the lovable companion dogs often seen in family films.",
+    "rescue_name": "Manchester Rescue Centre",
     "location": "Manchester",
-    "email": "contact@happytails.org",
-    "phone": "01234 567890"
+    "email": "manchester-rescue@example.org",
+    "phone": "0161 1234123"
   },
   {
     "id": 2,
-    "name": "Mittens",
+    "name": "Tom",
     "type": "Cat",
+    "breed": "British Short Hair",
     "age": 2,
-    "description": "Mittens is a calm indoor cat who enjoys quiet spaces and cosy naps.",
-    "rescue_name": "Paws Haven",
+    "description": "Tom loves to chase but rarely catches his target. Inspired by the classic cartoon cat known for his mischievous behaviour and endless determination.",
+    "rescue_name": "Leeds Cat Rescue",
     "location": "Leeds",
-    "email": "info@pawshaven.org",
-    "phone": "01132 456789"
+    "email": "leeds-cats@example.org",
+    "phone": "0114 1234123"
   },
   {
     "id": 3,
     "name": "Charlie",
     "type": "Dog",
+    "breed": "Border Collie",
     "age": 5,
-    "description": "Charlie is a loyal older dog looking for a loving forever home.",
-    "rescue_name": "Second Chance Rescue",
+    "description": "Charlie is a loyal older dog looking for a loving forever home. Inspired by well-known heroic dogs often seen in film and television.",
+    "rescue_name": "Liverpool Animal Rescue",
     "location": "Liverpool",
-    "email": "hello@secondchance.org",
-    "phone": "01514 123456"
-  }]
+    "email": "liverpool-rescue@example.org",
+    "phone": "0151 1234123"
+  },
+  {
+    "id": 4,
+    "name": "Peter Rabbit",
+    "type": "Rabbit",
+    "breed": "Dutch Rabbit",
+    "age": 1,
+    "description": "Peter Rabbit is a curious and gentle rabbit who enjoys exploring. Inspired by the famous storybook character known for his adventurous spirit.",
+    "rescue_name": "Birmingham Small Pets Rescue",
+    "location": "Birmingham",
+    "email": "birmingham-smallpets@example.org",
+    "phone": "0121 1234123"
+  },
+  {
+    "id": 5,
+    "name": "Spike",
+    "type": "Dog",
+    "breed": "Newfoundland",
+    "age": 4,
+    "description": "Spike is a calm and protective dog who would suit an experienced owner. Inspired by strong, loyal dogs often portrayed as protectors in media.",
+    "rescue_name": "Preston Dog Rescue",
+    "location": "Preston",
+    "email": "preston-dogs@example.org",
+    "phone": "01772 1234123"
+  },
+  {
+    "id": 6,
+    "name": "Stuart Little",
+    "type": "Mouse",
+    "breed": "Domestic Mouse",
+    "age": 2,
+    "description": "Stuart is a small but brave mouse with a big personality. Inspired by the well-known character who proves size does not limit courage.",
+    "rescue_name": "Bristol Small Animal Rescue",
+    "location": "Bristol",
+    "email": "bristol-smallanimals@example.org",
+    "phone": "0117 1234123"
+  },
+  {
+    "id": 7,
+    "name": "Rodney",
+    "type": "Guinea Pig",
+    "breed": "American Guinea Pig",
+    "age": 2,
+    "description": "Rodney is sociable and enjoys the company of others. Inspired by classic British sitcom characters with a charming personality.",
+    "rescue_name": "Sheffield Small Pets Rescue",
+    "location": "Sheffield",
+    "email": "sheffield-smallpets@example.org",
+    "phone": "0114 12341234"
+  },
+  {
+    "id": 8,
+    "name": "Zara",
+    "type": "Zebra",
+    "breed": "Plains Zebra",
+    "age": 6,
+    "description": "Zara is part of a specialist sanctuary listing used for demonstration purposes. Inspired by wildlife characters featured in animated films.",
+    "rescue_name": "Kent Wildlife Sanctuary",
+    "location": "Kent",
+    "email": "kent-wildlife@example.org",
+    "phone": "01233 1234123"
+  },
+  {
+    "id": 9,
+    "name": "Willie",
+    "type": "Orca",
+    "breed": "Orca",
+    "age": 12,
+    "description": "Willie represents marine rescue and sanctuary listings within the platform.",
+    "rescue_name": "Cornwall Marine Sanctuary",
+    "location": "Cornwall",
+    "email": "cornwall-marine@example.org",
+    "phone": "01632 960109"
+  }
+]
