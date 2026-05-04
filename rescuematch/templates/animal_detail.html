@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ animal.name }} | RescueMatch</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>RescueMatch</h1>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'browse' %}">Browse Animals</a>
+        <a href="/admin/">Admin</a>
+    </nav>
+</header>
+
+<section class="detail-card">
+    <h2>{{ animal.name }}</h2>
+    <p><strong>Type:</strong> {{ animal.animal_type }}</p>
+    <p><strong>Breed:</strong> {{ animal.breed }}</p>
+    <p><strong>Age:</strong> {{ animal.age }}</p>
+    <p>{{ animal.description }}</p>
+
+    <h3>Rescue Details</h3>
+    <p><strong>Rescue:</strong> {{ animal.rescue.name }}</p>
+    <p><strong>Location:</strong> {{ animal.rescue.location }}</p>
+    <p><strong>Email:</strong> {{ animal.rescue.email }}</p>
+    <p><strong>Phone:</strong> {{ animal.rescue.phone }}</p>
+
+    <a href="{% url 'browse' %}" class="btn">Back to Browse</a>
+</section>
+
+</body>
+</html>

@@ -27,6 +27,7 @@
             <p><strong>Age:</strong> {{ animal.age }}</p>
             <p>{{ animal.description }}</p>
             <p><strong>Rescue:</strong> {{ animal.rescue.name }}</p>
+            <a href="{% url 'animal_detail' animal.id %}" class="btn">View Details</a>
         </div>
     {% endfor %}
 </section>
