@@ -164,3 +164,27 @@ body {
     background: rgba(0, 0, 0, 0.45);
     z-index: -1;
 }
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+/* Right side content */
+.hero-side {
+    background: rgba(0,0,0,0.4);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.hero-side p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.side-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.95rem;
+}

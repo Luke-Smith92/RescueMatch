@@ -13,11 +13,13 @@
     <nav>
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'browse' %}">Browse Animals</a>
+        <a href="{% url 'about' %}">About</a>
         <a href="/admin/">Admin</a>
     </nav>
 </header>
 
 <section class="hero">
+
     <div class="hero-card">
         <h2>Find your perfect companion</h2>
         <p>
@@ -26,7 +28,17 @@
         </p>
         <a href="{% url 'browse' %}" class="btn">Browse Animals</a>
     </div>
-</section>
 
+    <div class="hero-side">
+        <p>
+            Thinking about adopting?
+        </p>
+
+        <a href="{% url 'about' %}" class="side-link">
+            Learn more about responsible adoption →
+        </a>
+    </div>
+
+</section>
 </body>
 </html>

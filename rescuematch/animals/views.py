@@ -37,3 +37,5 @@ def match_animal(request, animal_id):
         "next_animal": next_animal,
         "matched": True,
     })
+def about(request):
+    return render(request, "about.html")

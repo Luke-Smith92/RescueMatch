@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About - RescueMatch</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<header class="site-header">
+    <h1>RescueMatch</h1>
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'browse' %}">Browse Animals</a>
+        <a href="{% url 'about' %}">About</a>
+    </nav>
+</header>
+
+<div class="detail-card">
+    <h2>About RescueMatch</h2>
+
+ <p>
+    RescueMatch is a web application designed to work like a Tinder-style matching platform for animal rehoming across the UK.
+</p>
+
+<p>
+    Users can browse rescue animals, view their details, and use a limited number of free matches before needing to pay to continue seeing more animals.
+</p>
+
+<p>
+    Rescue centre details are hidden until a match has been made. This is because showing the location too early could discourage users from considering an animal they may otherwise feel strongly connected to.
+</p>
+
+<p>
+    The aim of RescueMatch is to encourage users to focus first on the animal’s personality, needs, and suitability before making a decision based on location.
+</p>
+
+<h3>Responsible Adoption</h3>
+
+<p>
+    Before adopting a pet, it is important to understand the responsibilities involved. 
+    The following resources provide guidance on preparing for pet ownership:
+</p>
+
+<ul>
+    <li>
+        <a href="https://www.rspca.org.uk/adviceandwelfare/pets" target="_blank">
+            RSPCA: Advice on choosing and caring for pets
+        </a>
+    </li>
+    <li>
+        <a href="https://www.rspca.org.uk/adviceandwelfare/pets/general/preparation" target="_blank">
+            RSPCA: Preparing for a new pet
+        </a>
+    </li>
+</ul>
+
+<h3>Contact</h3>
+
+<p>
+    For enquiries please contact:
+</p>
+
+<p>
+    Email: example@email.com<br>
+    Phone: 07123 456789
+</p>
+</div>
+
+</body>
+</html>
