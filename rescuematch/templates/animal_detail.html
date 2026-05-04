@@ -17,7 +17,23 @@
 </header>
 
 <section class="detail-card">
+
+    <div class="detail-nav">
+        {% if previous_animal %}
+            <a href="{% url 'animal_detail' previous_animal.id %}" class="arrow-btn">← Previous</a>
+        {% else %}
+            <span></span>
+        {% endif %}
+
+        {% if next_animal %}
+            <a href="{% url 'animal_detail' next_animal.id %}" class="arrow-btn">Next →</a>
+        {% else %}
+            <span></span>
+        {% endif %}
+    </div>
+
     <h2>{{ animal.name }}</h2>
+
     <p><strong>Type:</strong> {{ animal.animal_type }}</p>
     <p><strong>Breed:</strong> {{ animal.breed }}</p>
     <p><strong>Age:</strong> {{ animal.age }}</p>

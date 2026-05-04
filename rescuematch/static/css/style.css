@@ -4,7 +4,27 @@ body {
     background: #f4f7f6;
     color: #222;
 }
+.hero {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
 
+.hero-card {
+    background: white;
+    max-width: 650px;
+    padding: 45px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.hero-card h2 {
+    color: #2f6f5e;
+    font-size: 2rem;
+}
 .site-header {
     background: #2f6f5e;
     color: white;
@@ -63,4 +83,18 @@ body {
     padding: 35px;
     border-radius: 15px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+.detail-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.arrow-btn {
+    background: #2f6f5e;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
 }
