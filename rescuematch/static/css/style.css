@@ -169,3 +169,12 @@ body {
     border-radius: 12px;
     margin: 20px 0;
 }
+
+.hero-side a,
+.hero-side a:visited,
+.hero-side a:hover,
+.hero-side a:active {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+}
