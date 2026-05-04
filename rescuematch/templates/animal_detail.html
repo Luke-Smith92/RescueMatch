@@ -33,6 +33,7 @@
     </div>
 
     <h2>{{ animal.name }}</h2>
+    <img src="{% static 'images/'|add:animal.image_name %}" alt="{{ animal.name }}" class="detail-image">
 
     <p><strong>Type:</strong> {{ animal.animal_type }}</p>
     <p><strong>Breed:</strong> {{ animal.breed }}</p>

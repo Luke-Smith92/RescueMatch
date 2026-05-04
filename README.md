@@ -30,3 +30,15 @@ Users can browse available pets and match with animals they are interested in. O
    py app.py
 
 3. Open in browser:
+
+## Image Credits
+
+All images used in this project were sourced from Pixabay and are free for use under the Pixabay Content License.
+
+- Chihuahua (Buddy) – Photo by RebeccasPictures
+- Border Collie (Charlie) – Photo by Alexas_Fotos
+- Rabbit (Peter Rabbit) – Photo by Jackielou DL (JACLOU-DL)
+- Newfoundland (Spike) – Photo by Roksana Helscher (Roksana96)
+- Guinea Pig (Rodney) – Photo by Yvinne
+- Zebra (Zara) – Photo by Pete Ball (peterjohnball0)
+- Orca (Willie) – Photo by James Hills
