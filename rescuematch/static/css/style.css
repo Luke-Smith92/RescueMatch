@@ -14,8 +14,8 @@ body {
 
 .hero-card {
     background: white;
-    max-width: 650px;
-    padding: 45px;
+    max-width: 420px;
+    padding: 30px;
     text-align: center;
     border-radius: 18px;
     box-shadow: 0 4px 14px rgba(0,0,0,0.12);
@@ -23,7 +23,7 @@ body {
 
 .hero-card h2 {
     color: #2f6f5e;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .site-header {
     background: #2f6f5e;
@@ -120,7 +120,7 @@ body {
     margin: 20px 0;
 }
 .hero {
-    height: 80vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,7 +150,7 @@ body {
 .home-page {
     background-image: url("/static/images/rescuematch.jpg");
     background-size: 75%;   /* shrink image */
-    background-position: center;
+    background-position:left, 30%;
     background-repeat: no-repeat;
     background-color: #f4f7f6;
 }
