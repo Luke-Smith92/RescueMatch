@@ -119,24 +119,6 @@ body {
     border-radius: 12px;
     margin: 20px 0;
 }
-body {
-    background-image: url("/static/images/rescuematch.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.55); 
-    z-index: -1;
-}
 .hero {
     height: 80vh;
     display: flex;
@@ -164,4 +146,21 @@ body::before {
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
+}
+.home-page {
+    background-image: url("/static/images/rescuematch.jpg");
+    background-size: 75%;   /* shrink image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f4f7f6;
+}
+.home-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: -1;
 }
