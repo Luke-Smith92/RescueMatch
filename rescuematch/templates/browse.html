@@ -21,6 +21,7 @@
 <section class="animal-grid">
     {% for animal in animals %}
         <div class="animal-card">
+            <img src="{% static 'images/'|add:animal.image_name %}" alt="{{ animal.name }}">
             <h2>{{ animal.name }}</h2>
             <p><strong>Type:</strong> {{ animal.animal_type }}</p>
             <p><strong>Breed:</strong> {{ animal.breed }}</p>
