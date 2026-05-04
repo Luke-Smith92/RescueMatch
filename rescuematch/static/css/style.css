@@ -105,3 +105,10 @@ body {
     border-radius: 10px;
     margin-bottom: 10px;
 }
+.hidden-rescue-message {
+    background: #eef5f2;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #2f6f5e;
+}

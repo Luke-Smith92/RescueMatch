@@ -5,4 +5,5 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('browse/', views.browse, name='browse'),
     path('animal/<int:animal_id>/', views.animal_detail, name='animal_detail'),
+    path('animal/<int:animal_id>/match/', views.match_animal, name='match_animal'),
 ]

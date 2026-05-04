@@ -39,14 +39,19 @@
     <p><strong>Age:</strong> {{ animal.age }}</p>
     <p>{{ animal.description }}</p>
 
+    {% if matched %}
     <h3>Rescue Details</h3>
     <p><strong>Rescue:</strong> {{ animal.rescue.name }}</p>
     <p><strong>Location:</strong> {{ animal.rescue.location }}</p>
     <p><strong>Email:</strong> {{ animal.rescue.email }}</p>
     <p><strong>Phone:</strong> {{ animal.rescue.phone }}</p>
+{% else %}
+    <p class="hidden-rescue-message">
+        Rescue details are hidden until you match with this animal.
+    </p>
 
-    <a href="{% url 'browse' %}" class="btn">Back to Browse</a>
-</section>
+    <a href="{% url 'match_animal' animal.id %}" class="btn">Match with {{ animal.name }}</a>
+{% endif %}
 
 </body>
 </html>
