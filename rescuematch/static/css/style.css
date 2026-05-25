@@ -262,3 +262,10 @@ body {
 .danger-btn:hover {
     background: #8e2020;
 }
+.crud-image {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

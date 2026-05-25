@@ -13,7 +13,7 @@
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'browse' %}">Browse Animals</a>
         <a href="{% url 'about' %}">About</a>
-        <a href="{% url 'manage_animals' %}">Manage Animals</a>
+       <a href="{% url 'manage_animals' %}">Rescue Centre Portal</a>
     </nav>
 
     <main class="form-container">
@@ -25,6 +25,7 @@
 
             <button type="submit" class="btn primary-btn">{{ button_text }}</button>
             <a href="{% url 'manage_animals' %}" class="btn">Cancel</a>
+            <a href="{% url 'manage_animals' %}" class="btn">Back</a>
         </form>
     </main>
 

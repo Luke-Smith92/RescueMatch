@@ -13,7 +13,7 @@
         <a href="{% url 'home' %}">Home</a>
         <a href="{% url 'browse' %}">Browse Animals</a>
         <a href="{% url 'about' %}">About</a>
-        <a href="{% url 'manage_animals' %}">Manage Animals</a>
+        <<a href="{% url 'manage_animals' %}">Rescue Centre Portal</a>
     </nav>
 
     <main class="crud-container">
@@ -24,6 +24,9 @@
         <div class="crud-list">
             {% for animal in animals %}
                 <div class="crud-card">
+                    {% if animal.image %}
+    <img src="{{ animal.image.url }}" alt="{{ animal.name }}" class="crud-image">
+{% endif %}
                     <h2>{{ animal.name }}</h2>
                     <p>{{ animal.animal_type }} - {{ animal.breed }}</p>
 
