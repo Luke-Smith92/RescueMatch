@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Animal | RescueMatch</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <nav>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'browse' %}">Browse Animals</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="{% url 'manage_animals' %}">Manage Animals</a>
+    </nav>
+
+    <main class="delete-container">
+        <h1>Delete Animal Listing</h1>
+
+        <p>Are you sure you want to delete <strong>{{ animal.name }}</strong>?</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit" class="btn danger-btn">Yes, Delete</button>
+            <a href="{% url 'manage_animals' %}" class="btn">Cancel</a>
+        </form>
+    </main>
+
+</body>
+</html> 
