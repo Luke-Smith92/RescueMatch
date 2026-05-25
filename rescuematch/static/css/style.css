@@ -42,8 +42,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    padding: 40px 80px;
+    gap: 140px;
+    padding: 40px 120px;
     text-align: center;
 }
 
@@ -72,6 +72,7 @@ body {
     text-align: left;
     padding: 18px 22px;
     border-radius: 12px;
+    margin-left: auto;
 }
 
 .hero-side p {
