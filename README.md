@@ -194,6 +194,18 @@ During development there were issues with image paths and static files not loadi
 
 Some navigation bars and page layouts did not match the rest of the website during development. This was fixed by reusing the same header and styling across all pages.
 
+### Render Deployment Issues
+
+There were several issues during deployment to Render. The project initially failed to deploy due to missing files such as `requirements.txt` and missing dependencies like `gunicorn`.
+
+There were also issues with the Django project root directory not being correctly configured, which caused Render to fail to locate the `rescuematch_project` module.
+
+These issues were fixed by:
+- Creating a requirements.txt file
+- Installing gunicorn
+- Updating the Render start command
+- Setting the correct root directory for the Django project
+
 ---
 
 ## Future Improvements
