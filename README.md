@@ -1,5 +1,7 @@
 # RescueMatch
 
+(static/images/screenshots/am_i_responsive.png)
+
 ## Project Overview
 
 RescueMatch is a pet rehoming website designed to help connect rescue centres with people looking to adopt animals.
@@ -13,7 +15,7 @@ The project was built using Python, Django, HTML and CSS. It includes front-end 
 ## Live Site
 
 https://rescuematch.onrender.com
-
+(static/images/screenshots/live_site.png)
 ---
 
 ## Repository
@@ -160,6 +162,16 @@ Animal records can be removed when an animal has been adopted or is no longer av
 ![Database Diagram](assets/images/screenshots/database-diagram.png)
 
 The project uses two main database models.
+
+## Responsive Design
+
+![Responsive Design](static/images/screenshots/am_i_responsive.png)
+
+RescueMatch was designed using responsive design principles to ensure the website works across desktop, tablet and mobile devices.
+
+Testing was carried out using browser developer tools and the Am I Responsive website. The results showed that the layout adjusts correctly across different screen sizes while keeping navigation, images and content accessible.
+
+Users can browse animals, view animal details and access the Rescue Centre Portal regardless of the device being used.
 
 ### RescueCentre
 
@@ -415,7 +427,8 @@ Deployment steps:
 - Messaging between adopters and rescue centres
 - Advanced search and filtering
 - More detailed animal profiles
-
+- Messaging system allowing adopters to contact rescue centres directly through the website instead of using email or telephone details
+- mobile hamburger navigation menu
 ---
 
 # Credits
