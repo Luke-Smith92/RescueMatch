@@ -204,20 +204,6 @@ The database structure was designed this way so that additional rescue centres c
 
 ---
 
-# Responsive Design
-
-## Responsive Testing
-
-![Responsive Design](assets/images/screenshots/am-i-responsive.png)
-
-The website was designed to work across desktop, tablet and mobile devices.
-
-Testing was carried out using browser developer tools and responsive testing websites to ensure pages displayed correctly across different screen sizes.
-
-Navigation, images and page layouts adjusted correctly when viewed on smaller screens.
-
----
-
 # Testing
 
 ## Manual Testing
