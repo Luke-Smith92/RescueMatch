@@ -2,53 +2,97 @@
 
 ## Project Overview
 
-RescueMatch is a pet rehoming platform designed to connect approved rescue centres with people looking to adopt animals.
+RescueMatch is a pet rehoming website designed to help connect rescue centres with people looking to adopt animals.
 
-The aim of the project was to create a simple and easy to use website where users can browse animals available for adoption and show interest in a pet they would like to adopt. Once matched, the rescue centre contact details are revealed to the user.
+Users can browse available animals, view information about each pet and match with animals they are interested in. Once a match has been made, the rescue centre contact details are revealed so the adoption process can begin.
 
-The project was built using Django, HTML and CSS and focuses on front-end CRUD functionality along with responsive design and simple navigation.
+The project was built using Python, Django, HTML and CSS. It includes front-end CRUD (Create, Read, Update and Delete) functionality that allows rescue centres to manage animal listings.
 
 ---
 
 ## Live Site
 
-[INSERT LIVE SITE LINK HERE]
+https://rescuematch.onrender.com
 
 ---
 
 ## Repository
 
-[INSERT GITHUB REPOSITORY LINK HERE]
+[INSERT GITHUB REPOSITORY LINK]
 
 ---
 
-## Responsive Design
+# User Experience (UX)
 
-The website was designed to work across desktop, tablet and mobile devices.
+## Project Goals
 
-**SCREENSHOT HERE – Responsive Design**
+The aim of RescueMatch is to make it easier for people to find animals looking for a new home while also giving rescue centres a simple way to manage their animal listings.
+
+The website was designed to be easy to navigate, responsive across different devices and simple for users to understand.
+
+## User Stories
+
+### First Time User
+
+- Understand what RescueMatch is
+- Browse available animals
+- Learn how the matching process works
+- Easily navigate the website
+
+### Returning User
+
+- Check for newly added animals
+- Browse animal profiles
+- Match with animals they are interested in
+
+### Rescue Centre User
+
+- Add new animals
+- Edit existing animal listings
+- Remove adopted animals
+- Manage current animal records
 
 ---
+
+## Design Planning
+
+![Design Planning](assets/images/screenshots/design-planning.png)
+
+Formal wireframes were not created for this project.
+
+Instead, the website was developed using an iterative approach. Layouts and features were designed directly in the browser and improved throughout development based on testing and usability.
+
+The website was built around three main user journeys:
+
+- Browsing available animals
+- Viewing animal details
+- Managing animal listings through the Rescue Centre Portal
+
+---
+
+# Features
 
 ## Home Page
 
-The home page introduces the RescueMatch idea and explains how the adoption process works. Users can navigate to browse animals or access the Rescue Centre Portal.
+![Home Page](assets/images/screenshots/home-page.png)
 
-**SCREENSHOT HERE – Home Page**
+The home page introduces the RescueMatch platform and explains how the adoption process works. Users can navigate to browse animals or access the Rescue Centre Portal.
 
 ---
 
 ## Browse Animals
 
-Users can browse available animals displayed in a responsive grid layout. Each animal has its own profile page with information about the animal.
+![Browse Animals](assets/images/screenshots/browse-animals.png)
 
-**SCREENSHOT HERE – Browse Animals**
+Users can browse available animals displayed in a responsive grid layout. Each animal includes an image and summary information.
 
 ---
 
 ## Animal Detail Page
 
-Each animal has its own page showing:
+![Animal Detail Page](assets/images/screenshots/animal-detail-page.png)
+
+Each animal has its own profile page displaying:
 
 - Animal image
 - Breed
@@ -56,65 +100,325 @@ Each animal has its own page showing:
 - Description
 - Match button
 
-The rescue centre information stays hidden until the user chooses to match with the animal.
+Rescue centre information remains hidden until the user chooses to match with the animal.
 
-**SCREENSHOT HERE – Animal Detail Page**
+---
+
+## Match Page
+
+![Match Page](assets/images/screenshots/match-page.png)
+
+When a user chooses to match with an animal, the rescue centre contact details are revealed. This allows the user to contact the rescue centre directly regarding adoption.
 
 ---
 
 ## Rescue Centre Portal
 
-The project includes front-end CRUD functionality through the Rescue Centre Portal.
+![Rescue Centre Portal](assets/images/screenshots/rescue-centre-portal.png)
 
-Approved rescue centres can:
+The Rescue Centre Portal allows rescue centres to manage animal listings using CRUD (Create, Read, Update and Delete) functionality.
 
-- Add animal listings
-- Edit animal listings
-- Delete animal listings
-- Manage current animals
-
-This was added to meet the CRUD requirements of the project.
-
-**SCREENSHOT HERE – Rescue Centre Portal**
-
----
-
-## User Experience
-
-### First Time User
-
-- Understand what RescueMatch is
-- Browse available animals
-- Learn how matching works
-- Easily navigate the website
-
-### Returning User
-
-- Check for new animals
-- View animal profiles
-- Match with animals they are interested in
-
-### Rescue Centre User
+Rescue centres can:
 
 - Add new animals
-- Update existing listings
-- Remove adopted animals
+- Edit existing animals
+- Delete animals
+- Manage current listings
+
+For the current version of the project, a single rescue centre record is used to demonstrate the functionality. However, the database structure has been designed so additional rescue centres can be added in future versions of the website.
 
 ---
 
-## Features
+## Add Animal
 
-- Responsive design
-- Browse animal listings
-- Individual animal profile pages
-- Match system
-- Hidden rescue centre information until matched
-- Front-end CRUD functionality
-- Previous and next animal navigation
-- Rescue Centre Portal
-- Responsive navigation bar
+![Add Animal](assets/images/screenshots/add-animal.png)
+
+Rescue centres can add new animal listings using a form. The information is then stored in the database and displayed on the website.
 
 ---
+
+## Edit Animal
+
+![Edit Animal](assets/images/screenshots/edit-animal.png)
+
+Existing animal records can be updated whenever information changes.
+
+---
+
+## Delete Animal
+
+![Delete Animal](assets/images/screenshots/delete-animal.png)
+
+Animal records can be removed when an animal has been adopted or is no longer available.
+
+---
+
+# Database Structure
+
+## Database Diagram
+
+![Database Diagram](assets/images/screenshots/database-diagram.png)
+
+The project uses two main database models.
+
+### RescueCentre
+
+Stores:
+
+- Name
+- Location
+- Email
+- Phone Number
+
+### Animal
+
+Stores:
+
+- Name
+- Animal Type
+- Breed
+- Age
+- Description
+- Image
+- Rescue Centre
+
+### Relationships
+
+A one-to-many relationship exists between RescueCentre and Animal.
+
+One rescue centre can have multiple animals available for adoption, while each animal belongs to a single rescue centre.
+
+The database structure was designed this way so that additional rescue centres can be added in future versions of the platform without requiring major changes to the database.
+
+---
+
+# Responsive Design
+
+## Responsive Testing
+
+![Responsive Design](assets/images/screenshots/am-i-responsive.png)
+
+The website was designed to work across desktop, tablet and mobile devices.
+
+Testing was carried out using browser developer tools and responsive testing websites to ensure pages displayed correctly across different screen sizes.
+
+Navigation, images and page layouts adjusted correctly when viewed on smaller screens.
+
+---
+
+# Testing
+
+## Manual Testing
+
+Manual testing was carried out throughout development to ensure all features worked as expected.
+
+| Feature | Expected Result | Pass/Fail |
+|----------|----------|----------|
+| Home Page | Home page loads correctly | Pass |
+| Browse Animals | Animal listings display correctly | Pass |
+| Animal Detail Page | Animal information displays correctly | Pass |
+| Match System | Rescue information is revealed | Pass |
+| Add Animal | New animal record created | Pass |
+| Edit Animal | Animal record updated | Pass |
+| Delete Animal | Animal record removed | Pass |
+| Navigation | Links work correctly | Pass |
+| Responsive Design | Layout adjusts correctly | Pass |
+
+---
+
+## Automated Testing
+
+Automated testing was used to help identify coding issues and improve website quality.
+
+The following tools were used:
+
+- W3C HTML Validator
+- W3C CSS Validator
+- Lighthouse
+- Browser Developer Tools
+
+---
+
+## HTML Validation
+
+![HTML Validation](assets/images/screenshots/html-validation.png)
+
+All HTML pages were tested using the W3C HTML Validator.
+
+Any validation errors found during development were corrected before submission.
+
+---
+
+## CSS Validation
+
+![CSS Validation](assets/images/screenshots/css-validation.png)
+
+The CSS stylesheet was tested using the W3C CSS Validator.
+
+The final stylesheet passed validation successfully.
+
+---
+
+## Lighthouse Testing
+
+![Lighthouse Testing](assets/images/screenshots/lighthouse-testing.png)
+
+Lighthouse testing was used to assess:
+
+- Performance
+- Accessibility
+- Best Practices
+- SEO (Search Engine Optimisation)
+
+Search Engine Optimisation (SEO) measures how easily search engines can understand and index a website.
+
+The results helped identify areas for improvement during development and testing.
+
+---
+
+# Bugs and Fixes
+
+## Flask to Django Change
+
+The project originally started in Flask before it became clear that Django would be more suitable for handling database models and CRUD functionality.
+
+The project was rebuilt using Django which allowed proper use of models, templates and database relationships.
+
+---
+
+## CRUD Template Issues
+
+During development some CRUD pages failed to load due to missing templates and incorrect file references.
+
+This was fixed by creating the correct Django templates and ensuring views and URLs were linked correctly.
+
+---
+
+## Static File Issues
+
+There were issues with images and static files not loading correctly during development.
+
+This was fixed by organising files using Django's static file structure and updating image paths.
+
+---
+
+## Navigation and Layout Issues
+
+Some pages initially used different navigation layouts which caused inconsistency across the website.
+
+This was fixed by using a consistent header and navigation structure across all pages.
+
+---
+
+## Render Deployment Issues
+
+The website initially failed to deploy to Render due to missing dependencies and configuration problems.
+
+Problems included:
+
+- Missing requirements.txt
+- Missing gunicorn package
+- Incorrect Django project location
+- Incorrect Render start command
+
+These issues were fixed through testing, troubleshooting and deployment configuration changes.
+
+---
+
+## Render Static File Problems
+
+After deployment, CSS and image files were not loading correctly on the live website.
+
+This caused the website to appear unstyled despite the Django application working correctly.
+
+The issue was fixed by:
+
+- Configuring WhiteNoise
+- Setting STATIC_ROOT
+- Running collectstatic
+- Updating deployment settings
+- Correcting ALLOWED_HOSTS settings
+
+Online documentation, troubleshooting guides and AI assistance were used to help identify and resolve the issue.
+
+---
+
+# Deployment
+
+## Local Deployment
+
+1. Clone the repository
+
+```bash
+git clone INSERT_REPOSITORY_URL
+```
+
+2. Open the project in VS Code
+
+3. Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+4. Activate the virtual environment
+
+```bash
+.venv\Scripts\activate
+```
+
+5. Install requirements
+
+```bash
+pip install -r requirements.txt
+```
+
+6. Run migrations
+
+```bash
+python manage.py migrate
+```
+
+7. Start the development server
+
+```bash
+python manage.py runserver
+```
+
+---
+
+## Render Deployment
+
+The project was deployed using Render.
+
+Deployment steps:
+
+1. Create a new Web Service in Render
+2. Connect the GitHub repository
+3. Configure environment variables
+4. Install dependencies using requirements.txt
+5. Configure WhiteNoise for static files
+6. Run database migrations
+7. Deploy the application
+
+---
+
+# Future Improvements
+
+- Multiple rescue centre accounts
+- Secure login system for rescue centres
+- Individual rescue centre dashboards
+- Rescue centres managing only their own animal listings
+- User accounts
+- Saved matches
+- Swipe-style matching system
+- Messaging between adopters and rescue centres
+- Advanced search and filtering
+- More detailed animal profiles
+
+---
+
+# Credits
 
 ## Technologies Used
 
@@ -126,147 +430,28 @@ This was added to meet the CRUD requirements of the project.
 - Git
 - GitHub
 - VS Code
+- Render
 
 ---
 
-## Database Models
+## Images
 
-The project uses two main database models:
+All animal images used in this project were sourced from Pixabay and are free to use under the Pixabay Content Licence.
 
-### RescueCentre
-
-Stores rescue centre information including:
-
-- Name
-- Location
-- Email
-- Phone number
-
-### Animal
-
-Stores animal information including:
-
-- Name
-- Animal type
-- Breed
-- Age
-- Description
-- Image
-- Linked rescue centre
-
-**SCREENSHOT HERE – Database Model / Diagram**
+**INSERT IMAGE CREDITS TABLE HERE**
 
 ---
 
-## Testing
+## Acknowledgements
 
-### Manual Testing
-
-| Feature | Expected Result | Pass/Fail |
-|---|---|---|
-| Home page loads | Home page displays correctly | Pass |
-| Browse animals | Animals display correctly | Pass |
-| Animal detail page | Individual animal page loads | Pass |
-| Match button | Rescue information is revealed | Pass |
-| Add animal | Animal listing added successfully | Pass |
-| Edit animal | Animal listing updates correctly | Pass |
-| Delete animal | Animal listing removed correctly | Pass |
-| Navigation links | Links navigate correctly | Pass |
-| Responsive layout | Layout adjusts correctly on mobile/tablet | Pass |
+- Code Institute
+- Django Documentation
+- Render Documentation
+- Pixabay
+- Online troubleshooting resources used during development
 
 ---
 
-## Bugs and Fixes
-
-### Flask to Django Change
-
-Originally the project started using Flask by mistake before realising the project requirements were better suited to Django. The project was then rebuilt using Django so proper models, templates and CRUD functionality could be added.
-
-### Front-End CRUD Issues
-
-There was an issue where the front-end CRUD pages would not load correctly due to missing templates and incorrect file naming. This was fixed by creating the correct Django templates and linking them properly through views and URLs.
-
-### Static File Issues
-
-During development there were issues with image paths and static files not loading correctly. This was fixed by using Django static file structure and updating image paths correctly.
-
-### Navigation/Layout Issues
-
-Some navigation bars and page layouts did not match the rest of the website during development. This was fixed by reusing the same header and styling across all pages.
-
-### Render Deployment Issues
-
-There were several issues during deployment to Render. The project initially failed to deploy due to missing files such as `requirements.txt` and missing dependencies like `gunicorn`.
-
-There were also issues with the Django project root directory not being correctly configured, which caused Render to fail to locate the `rescuematch_project` module.
-
-These issues were fixed by:
-- Creating a requirements.txt file
-- Installing gunicorn
-- Updating the Render start command
-- Setting the correct root directory for the Django project
-
-### Render Static File Problems
-
-After the website was successfully deployed to Render, there were still issues with CSS and images not loading correctly on the live site. This caused the website to appear unstyled even though the Django application itself was running.
-
-A lot of troubleshooting was needed to solve this, including using online documentation and some AI assistance to help identify the missing static file configuration settings.
-
-The issue was fixed by:
-
-- Adding the correct ALLOWED_HOSTS settings
-- Installing and configuring WhiteNoise
-- Setting up STATIC_ROOT
-- Running collectstatic during deployment
-- Updating the Render build settings
-
-Once these changes were added, the website loaded correctly with styling and images working on the deployed version.
----
-
-## Future Improvements
-
-- User login system for approved rescue centres
-- Secure authentication for the Rescue Centre Portal
-- User accounts and saved matches
-- Swipe style matching system
-- Messaging system between rescues and adopters
-- Improved search and filtering
-- More detailed animal profiles
-
----
-
-## Deployment
-
-### Local Deployment
-
-1. Clone the repository
-
-2. Install requirements
-
-```bash
-pip install -r requirements.txt
-
-
----
-
-## Credits
-
-### Images Used
-
-All images used in this project were sourced from Pixabay and are free to use under the Pixabay Content License.
-
-| Animal | Credit |
-|---|---|
-| Buddy (Chihuahua) | Photo by RebeccasPictures |
-| Charlie (Border Collie) | Photo by Alexas_Fotos |
-| Peter Rabbit (Rabbit) | Photo by Jackielou DL (JACLOU-DL) |
-| Spike (Newfoundland) | Photo by Roksana Helscher (Roksana96) |
-| Rodney (Guinea Pig) | Photo by Yvinne |
-| Zara (Zebra) | Photo by Pete Ball (peterjohnball0) |
-| Willie (Orca) | Photo by James Hills |
-
----
-
-## Author
+# Author
 
 Created by Luke Smith for Milestone Project 3.
