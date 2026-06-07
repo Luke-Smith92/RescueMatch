@@ -253,7 +253,13 @@ The following tools were used:
 
 ## HTML Validation
 
-![HTML Validation](assets/images/screenshots/html-validation.png)
+![HTML Validation](assets/images/screenshots/html_validator_home.png)
+(assets/images/screenshots/html_browse.png)
+(assets/images/screenshots/html_about.png)
+(assets/images/screenshots/html_login.png)
+(assets/images/screenshots/html_animal-page.png)
+(assets/images/screenshots/html_manage-animals.png)
+(assets/images/screenshots/html_delete-page)
 
 All HTML pages were tested using the W3C HTML Validator.
 
