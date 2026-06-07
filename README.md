@@ -206,6 +206,21 @@ These issues were fixed by:
 - Updating the Render start command
 - Setting the correct root directory for the Django project
 
+### Render Static File Problems
+
+After the website was successfully deployed to Render, there were still issues with CSS and images not loading correctly on the live site. This caused the website to appear unstyled even though the Django application itself was running.
+
+A lot of troubleshooting was needed to solve this, including using online documentation and some AI assistance to help identify the missing static file configuration settings.
+
+The issue was fixed by:
+
+- Adding the correct ALLOWED_HOSTS settings
+- Installing and configuring WhiteNoise
+- Setting up STATIC_ROOT
+- Running collectstatic during deployment
+- Updating the Render build settings
+
+Once these changes were added, the website loaded correctly with styling and images working on the deployed version.
 ---
 
 ## Future Improvements

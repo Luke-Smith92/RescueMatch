@@ -6,6 +6,11 @@ from .forms import AnimalForm
 def home(request):
     return render(request, "home.html")
 
+def rescue_login(request):
+    if request.method == "POST":
+        return redirect("manage_animals")
+
+    return render(request, "rescue_login.html")
 
 def browse(request):
     animals = Animal.objects.all()
