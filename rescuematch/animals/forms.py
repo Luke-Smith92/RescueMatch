@@ -12,6 +12,5 @@ class AnimalForm(forms.ModelForm):
             "age",
             "description",
             "image",
-            "rescue",
             "image_name",
         ]
