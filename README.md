@@ -353,7 +353,7 @@ The issue was fixed by:
 
 Online documentation, troubleshooting guides and AI assistance were used to help identify and resolve the issue.
 
-### HTML Validation Error
+## HTML Validation Error
 
 During HTML validation, the W3C Validator reported an error on the Animal Detail page caused by an unclosed `<section>` element.
 
@@ -366,6 +366,14 @@ The issue was identified using the W3C HTML Validator and fixed by adding the mi
 
 After the fix was applied, the page validated correctly.
 
+
+## Delete Data Persistence Issue
+
+During testing, the delete function removed an animal from the website, but the animal returned after the live site was reloaded.
+
+This appears to be due to the deployed database or sample data being reset on Render. The delete functionality works during the session, but persistent database storage would need to be improved in a future version.
+
+A future improvement would be to connect the project to a persistent production database such as PostgreSQL so deleted records remain deleted after reloads or redeployments.
 ---
 
 # Deployment
@@ -442,6 +450,7 @@ Deployment steps:
 - More detailed animal profiles
 - Messaging system allowing adopters to contact rescue centres directly through the website instead of using email or telephone details
 - mobile hamburger navigation menu
+- Use a persistent PostgreSQL database for the deployed version so CRUD changes remain saved permanently.
 ---
 
 # Credits
