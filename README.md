@@ -1,6 +1,6 @@
 # RescueMatch
 
-![Responsive Design](static/images/screenshots/am_i_responsive.png)
+![Responsive Design](rescuematch/static/images/screenshots/am_i_responsive.png)
 
 ## Project Overview
 
@@ -60,7 +60,7 @@ The project also provides rescue centres with the ability to manage animal listi
 
 ## Wireframes
 
-![Wireframe](static/images/screenshots/wireframe.png)
+![Wireframe](rescuematch/static/images/screenshots/wireframe.png)
 
 A wireframe was created during the planning stage of the project to help visualise the structure and layout of the website before development began.
 
@@ -100,7 +100,7 @@ The final website closely follows the original wireframe while adding additional
 
 ## Home Page
 
-![Home Page](static/images/screenshots/home-page.png)
+![Home Page](rescuematch/static/images/screenshots/home-page.png)
 
 The Home Page introduces the RescueMatch platform and explains the purpose of the website. Users can quickly navigate to browse available animals, learn more about the adoption process and access the Rescue Centre Portal.
 
@@ -110,7 +110,7 @@ The page was designed to provide a clear introduction to the website while keepi
 
 ## Browse Animals
 
-![Browse Animals](static/images/screenshots/browse-animals.png)
+![Browse Animals](rescuematch/static/images/screenshots/browse-animals.png)
 
 The Browse Animals page displays all available animals currently listed for adoption.
 
@@ -129,7 +129,7 @@ This allows users to quickly browse multiple animals before choosing which profi
 
 ## Animal Detail Page
 
-![Animal Detail Page](static/images/screenshots/animal_page.png)
+![Animal Detail Page](rescuematch/static/images/screenshots/animal_page.png)
 
 Each animal has its own dedicated profile page containing detailed information about the animal.
 
@@ -148,7 +148,7 @@ Users can then choose to match with the animal.
 
 ## View Animal
 
-![View Animal](static/images/screenshots/view-animal.png)
+![View Animal](rescuematch/static/images/screenshots/view-animal.png)
 
 The View Animal page allows users to read detailed information about an animal before deciding whether they would like to adopt.
 
@@ -158,7 +158,7 @@ Previous and Next navigation buttons were added to improve usability and allow u
 
 ## Match System
 
-![View Animal](static/images/screenshots/view-animal.png)
+![View Animal](rescuematch/static/images/screenshots/view-animal.png)
 
 A key feature of RescueMatch is the Match System.
 
@@ -177,7 +177,7 @@ This encourages users to focus on the animal rather than location before express
 
 ## About Page
 
-![About Page](static/images/screenshots/about.png)
+![About Page](rescuematch/static/images/screenshots/about.png)
 
 The About Page explains the purpose of RescueMatch and provides information about responsible pet ownership.
 
@@ -187,7 +187,7 @@ The page also includes useful external links and guidance for potential adopters
 
 ## Rescue Login
 
-![Rescue Login](static/images/screenshots/rescue-login.png)
+![Rescue Login](rescuematch/static/images/screenshots/rescue-login.png)
 
 The Rescue Login page provides access to the Rescue Centre Portal.
 
@@ -199,7 +199,7 @@ A secure authentication system has not yet been implemented and would be added i
 
 ## Manage Animals
 
-![Manage Animals](static/images/screenshots/manage-animals.png)
+![Manage Animals](rescuematch/static/images/screenshots/manage-animals.png)
 
 The Manage Animals page allows rescue centres to view and manage current animal listings.
 
@@ -216,7 +216,7 @@ This page acts as the main management area for rescue centre users.
 
 ## Edit Animal
 
-![Edit Animal](static/images/screenshots/edit-animal.png)
+![Edit Animal](rescuematch/static/images/screenshots/edit-animal.png)
 
 The Edit Animal page allows rescue centres to update information about an animal already stored within the database.
 
@@ -226,7 +226,7 @@ This functionality forms part of the CRUD requirements of the project.
 
 ## Delete Animal
 
-![Delete Animal](static/images/screenshots/delete-animal.png)
+![Delete Animal](rescuematch/static/images/screenshots/delete-animal.png)
 
 The Delete Animal page allows rescue centres to remove animal listings from the website.
 
@@ -236,7 +236,7 @@ This functionality forms part of the CRUD requirements and allows records to be 
 
 ## Database Structure
 
-![Database Diagram](static/images/screenshots/database-diagram.png)
+![Database Diagram](rescuematch/static/images/screenshots/database-diagram.png)
 
 The project uses two main database models:
 
@@ -270,7 +270,7 @@ This relationship is achieved using a Foreign Key within the Animal model which 
 
 ## Responsive Design
 
-![Responsive Design](static/images/screenshots/am_i_responsive.png)
+![Responsive Design](rescuematch/static/images/screenshots/am_i_responsive.png)
 
 The website was designed using responsive design principles to ensure usability across desktop, tablet and mobile devices.
 
@@ -346,7 +346,7 @@ Testing included:
 
 ### Home Page
 
-![HTML Validator Home](static/images/screenshots/html_validator_home.png)
+![HTML Validator Home](rescuematch/static/images/screenshots/html_validator_home.png)
 
 The Home Page was tested using the W3C HTML Validator. Any issues found during testing were corrected.
 
@@ -354,7 +354,7 @@ The Home Page was tested using the W3C HTML Validator. Any issues found during t
 
 ### Browse Animals Page
 
-![HTML Validator Browse](static/images/screenshots/html_validator_browse.png)
+![HTML Validator Browse](rescuematch/static/images/screenshots/html_validator_browse.png)
 
 The Browse Animals page was tested using the W3C HTML Validator and checked for HTML structure issues.
 
@@ -362,7 +362,7 @@ The Browse Animals page was tested using the W3C HTML Validator and checked for 
 
 ### Animal Page
 
-![HTML Validator Animal Page](static/images/screenshots/html_validator_animal-page.png)
+![HTML Validator Animal Page](rescuematch/static/images/screenshots/html_validator_animal-page.png)
 
 The Animal Detail page was tested using the W3C HTML Validator. An unclosed section tag was found during testing and fixed.
 
@@ -370,7 +370,7 @@ The Animal Detail page was tested using the W3C HTML Validator. An unclosed sect
 
 ### About Page
 
-![HTML Validator About](static/images/screenshots/html_validator_about.png)
+![HTML Validator About](rescuematch/static/images/screenshots/html_validator_about.png)
 
 The About Page was tested using the W3C HTML Validator.
 
@@ -378,7 +378,7 @@ The About Page was tested using the W3C HTML Validator.
 
 ### Login Page
 
-![HTML Validator Login](static/images/screenshots/html_validator_login.png)
+![HTML Validator Login](rescuematch/static/images/screenshots/html_validator_login.png)
 
 The Rescue Login page was tested using the W3C HTML Validator.
 
@@ -386,7 +386,7 @@ The Rescue Login page was tested using the W3C HTML Validator.
 
 ### Manage Animals Page
 
-![HTML Validator Manage Animals](static/images/screenshots/html_validator_manage-animals.png)
+![HTML Validator Manage Animals](rescuematch/static/images/screenshots/html_validator_manage-animals.png)
 
 The Manage Animals page was tested using the W3C HTML Validator.
 
@@ -394,7 +394,7 @@ The Manage Animals page was tested using the W3C HTML Validator.
 
 ### Delete Page
 
-![HTML Validator Delete Page](static/images/screenshots/html_validator_delete-page.png)
+![HTML Validator Delete Page](rescuematch/static/images/screenshots/html_validator_delete-page.png)
 
 The Delete Animal page was tested using the W3C HTML Validator.
 
@@ -402,7 +402,7 @@ The Delete Animal page was tested using the W3C HTML Validator.
 
 ## CSS Validation
 
-![CSS Validator](static/images/screenshots/css-validator.png)
+![CSS Validator](rescuematch/static/images/screenshots/css-validator.png)
 
 The CSS was tested using the W3C CSS Validator.
 
@@ -427,7 +427,7 @@ Search Engine Optimisation (SEO) measures how easily search engines can understa
 
 ### Mobile Lighthouse - Home Page
 
-![Mobile Lighthouse Home](static/images/screenshots/mobile-lighthouse-home.png)
+![Mobile Lighthouse Home](rescuematch/static/images/screenshots/mobile-lighthouse-home.png)
 
 The Home Page was tested on mobile using Lighthouse.
 
@@ -435,7 +435,7 @@ The Home Page was tested on mobile using Lighthouse.
 
 ### Desktop Lighthouse - Home Page
 
-![Desktop Lighthouse Home](static/images/screenshots/desktop-lighthouse-home.png)
+![Desktop Lighthouse Home](rescuematch/static/images/screenshots/desktop-lighthouse-home.png)
 
 The Home Page was tested on desktop using Lighthouse.
 
@@ -443,7 +443,7 @@ The Home Page was tested on desktop using Lighthouse.
 
 ### Mobile Lighthouse - Browse Animals
 
-![Mobile Lighthouse Browse](static/images/screenshots/mobile-lighthouse-browse.png)
+![Mobile Lighthouse Browse](rescuematch/static/images/screenshots/mobile-lighthouse-browse.png)
 
 The Browse Animals page was tested on mobile using Lighthouse.
 
@@ -451,7 +451,7 @@ The Browse Animals page was tested on mobile using Lighthouse.
 
 ### Desktop Lighthouse - Browse Animals
 
-![Desktop Lighthouse Browse](static/images/screenshots/desktop-lighthouse-browse.png)
+![Desktop Lighthouse Browse](rescuematch/static/images/screenshots/desktop-lighthouse-browse.png)
 
 The Browse Animals page was tested on desktop using Lighthouse.
 
