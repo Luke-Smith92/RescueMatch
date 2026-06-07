@@ -353,6 +353,19 @@ The issue was fixed by:
 
 Online documentation, troubleshooting guides and AI assistance were used to help identify and resolve the issue.
 
+### HTML Validation Error
+
+During HTML validation, the W3C Validator reported an error on the Animal Detail page caused by an unclosed `<section>` element.
+
+This resulted in the validator reporting:
+
+- Unclosed element `section`
+- End tag for `body` seen, but there were unclosed elements
+
+The issue was identified using the W3C HTML Validator and fixed by adding the missing closing `</section>` tag to the Animal Detail template.
+
+After the fix was applied, the page validated correctly.
+
 ---
 
 # Deployment
