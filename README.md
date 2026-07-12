@@ -465,31 +465,31 @@ The project's Python files were validated using the Code Institute Python Linter
 
 The `manage.py` file was validated using the Code Institute Python Linter.
 
-![Python Linter - manage.py](documentation/testing/python-linter-manage.png)
+![Python Linter - manage.py](static/screenshots/python-linter-manage.png)
 
 ### settings.py
 
 The `settings.py` file was validated using the Code Institute Python Linter.
 
-![Python Linter - settings.py](documentation/testing/python-linter-settings.png)
+![Python Linter - settings.py](static/screenshots/python-linter-settings.png)
 
 ### views.py
 
 The `views.py` file was validated using the Code Institute Python Linter.
 
-![Python Linter - views.py](documentation/testing/python-linter-views.png)
+![Python Linter - views.py](static/screenshots/python-linter-views.png)
 
 ### models.py
 
 The `models.py` file was validated using the Code Institute Python Linter.
 
-![Python Linter - models.py](documentation/testing/python-linter-models.png)
+![Python Linter - models.py](static/screenshots/python-linter-models.png)
 
 ### forms.py
 
 The `forms.py` file was validated using the Code Institute Python Linter.
 
-![Python Linter - forms.py](documentation/testing/python-linter-forms.png)
+![Python Linter - forms.py](static/screenshots/python-linter-forms.png)
 
 ---
 
