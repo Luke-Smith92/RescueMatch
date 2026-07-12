@@ -1,4 +1,5 @@
 from django import forms
+
 from .models import Animal
 
 
@@ -13,4 +14,5 @@ class AnimalForm(forms.ModelForm):
             "description",
             "image",
             "image_name",
+            "rescue",
         ]

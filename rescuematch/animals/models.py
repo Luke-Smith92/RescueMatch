@@ -17,9 +17,17 @@ class Animal(models.Model):
     breed = models.CharField(max_length=100)
     age = models.PositiveIntegerField()
     description = models.TextField()
-    image = models.ImageField(upload_to='animals/', blank=True, null=True)
-    rescue = models.ForeignKey(RescueCentre, on_delete=models.CASCADE, related_name='animals')
+    image = models.ImageField(
+        upload_to="animals/",
+        blank=True,
+        null=True,
+    )
+    rescue = models.ForeignKey(
+        RescueCentre,
+        on_delete=models.CASCADE,
+        related_name="animals",
+    )
     image_name = models.CharField(max_length=100, blank=True)
+
     def __str__(self):
         return self.name
-    
